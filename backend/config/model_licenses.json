@@ -4,6 +4,90 @@
   "scope": "Model-source disclosures joined to models.yaml. Using a model whose licence category is not commercial requires the user's local licence acceptance; ordinary installs and SDK auxiliary downloads are unchanged. The additive reviewed-install API fails closed on incomplete evidence. A local acknowledgement is not upstream assent or commercial permission.",
   "models": [
     {
+      "id": "tiffany101/whisper-small",
+      "license": "apache-2.0",
+      "commercial_use": false,
+      "review_status": "unreviewed",
+      "credit": "tiffany101/whisper-small — Twi fine-tune of openai/whisper-small",
+      "source_url": "https://huggingface.co/tiffany101/whisper-small",
+      "evidence_url": "https://huggingface.co/tiffany101/whisper-small/blob/c30bde0d966cd0f69a46a1578742ba29d65a9b0a/README.md",
+      "revision": "c30bde0d966cd0f69a46a1578742ba29d65a9b0a",
+      "engines": [
+        "pytorch-whisper"
+      ],
+      "configured_at": "backend/config/models.yaml",
+      "notes": "Licence identifier is upstream model-card metadata, not verified permission for this distribution. Fine-tune of openai/whisper-small (MIT); base and training-data terms require review.",
+      "runtime_revision": "c30bde0d966cd0f69a46a1578742ba29d65a9b0a",
+      "runtime_pin_scope": "central",
+      "runtime_pin_source": "backend/services/hf_revisions.py",
+      "component_closure": "incomplete",
+      "commercial_inference": "unknown",
+      "commercial_outputs": "unknown",
+      "documents": [],
+      "artifacts": [],
+      "required_components": [],
+      "upstream_access": "unknown",
+      "audit_observations": {
+        "commercial_inference": {
+          "status": "unreviewed",
+          "scope": "Selected weight/component only; not complete workflow clearance."
+        },
+        "output_terms": {
+          "status": "not_assessed",
+          "ownership_or_all_rights_cleared": false
+        },
+        "sources": [],
+        "open_questions": [
+          "Governing terms at installed revision and relevant required components",
+          "Attribution/NOTICE/redistribution duties",
+          "Reference voice and input rights, consent, training-provenance scope"
+        ],
+        "identified_components": []
+      }
+    },
+    {
+      "id": "dkt-py-bot/Whisper-FineTuned-DL-Twi",
+      "license": "apache-2.0",
+      "commercial_use": false,
+      "review_status": "unreviewed",
+      "credit": "dkt-py-bot/Whisper-FineTuned-DL-Twi — Twi fine-tune of openai/whisper-tiny",
+      "source_url": "https://huggingface.co/dkt-py-bot/Whisper-FineTuned-DL-Twi",
+      "evidence_url": "https://huggingface.co/dkt-py-bot/Whisper-FineTuned-DL-Twi/blob/ea33f11d7d7f5def4f0a35ab8ff960c5efd49c2d/README.md",
+      "revision": "ea33f11d7d7f5def4f0a35ab8ff960c5efd49c2d",
+      "engines": [
+        "pytorch-whisper"
+      ],
+      "configured_at": "backend/config/models.yaml",
+      "notes": "Licence identifier is upstream model-card metadata, not verified permission for this distribution. Fine-tune of openai/whisper-tiny (MIT); base and training-data terms require review.",
+      "runtime_revision": "ea33f11d7d7f5def4f0a35ab8ff960c5efd49c2d",
+      "runtime_pin_scope": "central",
+      "runtime_pin_source": "backend/services/hf_revisions.py",
+      "component_closure": "incomplete",
+      "commercial_inference": "unknown",
+      "commercial_outputs": "unknown",
+      "documents": [],
+      "artifacts": [],
+      "required_components": [],
+      "upstream_access": "unknown",
+      "audit_observations": {
+        "commercial_inference": {
+          "status": "unreviewed",
+          "scope": "Selected weight/component only; not complete workflow clearance."
+        },
+        "output_terms": {
+          "status": "not_assessed",
+          "ownership_or_all_rights_cleared": false
+        },
+        "sources": [],
+        "open_questions": [
+          "Governing terms at installed revision and relevant required components",
+          "Attribution/NOTICE/redistribution duties",
+          "Reference voice and input rights, consent, training-provenance scope"
+        ],
+        "identified_components": []
+      }
+    },
+    {
       "id": "k2-fsa/OmniVoice",
       "license": "CC-BY-NC (version unspecified); Higgs Audio 2; Meta Llama 3",
       "commercial_use": false,
