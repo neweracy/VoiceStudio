@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Upstream update check",
+      "trigger": "SessionStart",
+      "description": "On session start, fetch upstream/main (read-only) and report how far behind the fork is. Never merges or builds.",
+      "action": {
+        "type": "command",
+        "command": "bash scripts/kiro-update.sh 2>&1 | grep -E 'behind|ahead' || true",
+        "timeout": 60
+      }
+    }
+  ]
+}

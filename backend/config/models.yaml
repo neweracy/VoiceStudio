@@ -145,6 +145,26 @@ models:
     size_gb: 0.15
     note: "Lowest accuracy but near-instant. Good for rapid iteration."
 
+  # ── Twi / Akan ASR (Ghanaian-language Whisper fine-tunes) ──────────────
+  # PyTorch Whisper fine-tunes — load on the `pytorch-whisper` engine only
+  # (CTranslate2/faster-whisper cannot read raw safetensors). CUDA/ROCm hosts.
+
+  - repo_id: "tiffany101/whisper-small"
+    label: "Whisper small — Twi (fine-tuned, code-switch EN/Twi)"
+    role: ASR
+    engines: [pytorch-whisper]
+    size_gb: 0.97
+    platforms: [cuda, rocm]
+    note: "Twi/Akan speech fine-tune of openai/whisper-small. Best accuracy/size fit for 4 GB GPUs. PyTorch engine (CUDA/ROCm)."
+
+  - repo_id: "dkt-py-bot/Whisper-FineTuned-DL-Twi"
+    label: "Whisper tiny — Twi (fine-tuned, fast)"
+    role: ASR
+    engines: [pytorch-whisper]
+    size_gb: 0.15
+    platforms: [cuda, rocm]
+    note: "Twi fine-tune of openai/whisper-tiny. Fast, low accuracy — good for quick previews. PyTorch engine (CUDA/ROCm)."
+
   # ── Non-Whisper ASR (from Open ASR Leaderboard) ────────────────────────
 
   - repo_id: "nvidia/parakeet-tdt-0.6b-v3"
